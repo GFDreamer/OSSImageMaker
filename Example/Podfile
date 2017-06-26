@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OSSImageMaker_Example' do
+  pod 'OSSImageMaker', :path => '../'
+
+  target 'OSSImageMaker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
