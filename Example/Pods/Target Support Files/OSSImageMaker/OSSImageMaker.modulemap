@@ -1,0 +1,6 @@
+framework module OSSImageMaker {
+  umbrella header "OSSImageMaker-umbrella.h"
+
+  export *
+  module * { export * }
+}

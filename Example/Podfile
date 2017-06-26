@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'OSSImageMaker_Example' do
   pod 'OSSImageMaker', :path => '../'
+  pod 'Masonry'
+  pod 'SDWebImage'
 
   target 'OSSImageMaker_Tests' do
     inherit! :search_paths

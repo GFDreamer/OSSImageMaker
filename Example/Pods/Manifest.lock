@@ -1,0 +1,24 @@
+PODS:
+  - Masonry (1.0.2)
+  - OSSImageMaker (0.1.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - Masonry
+  - OSSImageMaker (from `../`)
+  - SDWebImage
+
+EXTERNAL SOURCES:
+  OSSImageMaker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  OSSImageMaker: 926cef9b5aa693d9d87d80bee2560ed2074cf12f
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: f94b5ba5755717f91cf4d274c87768fca7a79084
+
+COCOAPODS: 1.2.1
