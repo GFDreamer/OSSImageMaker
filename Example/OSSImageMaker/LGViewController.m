@@ -38,12 +38,9 @@
 {
     NSString *url = @"http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png";
     static int count = 1;
-    NSString *str = url.maker.resize.width(@(100 *count)).height(@(200 * count)).limit(@1).contentModel(@(OSSImageResizeContentModelTypeFill)).resultString;
+    NSString *str = url.maker.resize.width(@(100 *count)).height(@(200 * count)).contentModel(@(OSSImageResizeContentModelTypePad)).limit(@0).resultString;
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:str]];
     count = count + 1;
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {

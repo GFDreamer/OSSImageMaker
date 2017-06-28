@@ -22,12 +22,12 @@
 
 + (CGFloat)convertToWidthByHeight:(CGFloat)height scale:(CGFloat)scale
 {
-    return height *scale *[self screenScale];
+    return height *scale;
 }
 
 + (CGFloat)convertToHeightByWidth:(CGFloat)width scale:(CGFloat)scale
 {
-    return width / scale *[self screenScale];
+    return width / scale;
 }
 
 + (CGFloat)frameWidthPX:(CGFloat)width

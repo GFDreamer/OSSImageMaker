@@ -63,8 +63,9 @@ static NSString *const oss_fixed = @"m_fixed";
 {
     return ^(NSNumber *attribute) {
         NSAssert((attribute.floatValue >= 1.0 && attribute.floatValue <= 4096), @"宽度范围 1~4096");
-        self.oss_w = attribute;
-        [self addOSSImageAttributeValue:attribute.stringValue type:oss_w];
+        CGFloat w_f = [OSSDeviceManager frameWidthPX:attribute.floatValue];
+        self.oss_w = [NSNumber numberWithFloat:w_f];
+        [self addOSSImageAttributeValue:self.oss_w.stringValue type:oss_w];
         return self;
     };
 }
@@ -73,8 +74,9 @@ static NSString *const oss_fixed = @"m_fixed";
 {
     return ^(NSNumber *attribute) {
         NSAssert((attribute.floatValue >= 1.0 && attribute.floatValue <= 4096), @"高度范围 1~4096");
-        self.oss_h = attribute;
-        [self addOSSImageAttributeValue:attribute.stringValue type:oss_h];
+        CGFloat h_f = [OSSDeviceManager frameHeightPX:attribute.floatValue];
+        self.oss_h = [NSNumber numberWithFloat:h_f];
+        [self addOSSImageAttributeValue:self.oss_h.stringValue type:oss_h];
         return self;
     };
 }
@@ -104,7 +106,10 @@ static NSString *const oss_fixed = @"m_fixed";
         CGFloat result = [OSSDeviceManager convertToScreenHeightByScale:attribute.floatValue];
         
         NSAssert((result >= 1.0 && result <= 4096), @"放大比例过大, 超过4096的最大限制");
-        self.oss_w = [NSNumber numberWithInteger:OSS_SCREEN_W];
+        
+        CGFloat kSW = OSS_SCREEN_W;
+        CGFloat w_f = [OSSDeviceManager frameWidthPX:kSW];
+        self.oss_w = [NSNumber numberWithFloat:w_f];
         [self addOSSImageAttributeValue:self.oss_w.stringValue type:oss_w];
         self.oss_h = @(result);
         [self addOSSImageAttributeValue:self.oss_h.stringValue type:oss_h];

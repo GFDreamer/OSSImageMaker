@@ -30,7 +30,6 @@
 {
     NSString *actionString = [self.baseString stringByAppendingString:@"/resize"];
     OSSImageResizeAction *action = [[OSSImageResizeAction alloc] initWithString:actionString];
-    
     return action;
 }
 

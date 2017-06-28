@@ -42,8 +42,8 @@
 
 /**
  根据一个高度和宽高比, 计算出对应的高度
- 根据屏幕的 2x 3x 属性 输出需要图片的高度
- @param height 高度
+ 
+ @param height 高度  高度需要传入一个计算过 2x 和 3x 的高度
  @param scale 宽高比
  @return 计算出的宽度
  */
@@ -52,8 +52,7 @@
 
 /**
  根据宽度和宽高比 计算出高度
- 根据屏幕的 2x 3x 属性 输出需要图片的高度
- @param width 宽度
+ @param width 宽度 需要传入一个 计算过2x 和 3x 的宽度
  @param scale 宽高比
  @return 计算出的高度
  */

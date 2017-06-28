@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OSSImageMaker'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'OSS云存储对象URL的处理, 给图片参数添加一些属性, 进行图片的缩放, 比如图片的缩放模式, 设置宽高'
   s.description      = <<-DESC
     1. OSS图片URL对象处理
