@@ -19,7 +19,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "OSSImageMaker"
 ```
-```
 ## OSS阿里云属性比对
 <table>
   <thead>
@@ -37,10 +36,8 @@ pod "OSSImageMaker"
       <td>d</td>
       <td>q</td>
     </tr>
-    
   </tbody>
 </table>
-```
 
 ## Author
 
