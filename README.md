@@ -33,8 +33,8 @@ pod "OSSImageMaker"
     <tr>
       <td>contentModel</td>
       <td>m</td>
-      <td>d</td>
-      <td>q</td>
+      <td>指定缩略的模式：lfit：等比缩放，限制在设定在指定w与h的矩形内的最大图片。mfit：等比缩放，延伸出指定w与h的矩形框外的最小图片。fill：固定宽高，将延伸出指定w与h的矩形框外的最小图片进行居中裁剪。pad：固定宽高，缩略填充fixed：固定宽高，强制缩略</td>
+      <td>[lfit,mfit,fill,pad,fixed]，默认为lfit</td>
     </tr>
   </tbody>
 </table>
