@@ -69,25 +69,25 @@ pod "OSSImageMaker"
       <td>screenWidthToHeightScale(自定义属性)</td>
       <td>无</td>
       <td>宽高比 屏幕宽 根据传入的比例依据屏幕宽计算高度  高度 screenWidthToHeightScale  = ScreenWidth * 1.0 / ScreenHeight</td>
-      <td>1-1000</td>
+      <td>宽高比的值</td>
     </tr>
     <tr>
       <td>widthToHeightScale(自定义属性)</td>
       <td>无</td>
       <td>普通宽高比  根据指定宽和指定比例计算设置高度 比例 =  width / height 限制条件 必须 先配置 width的大小</td>
-      <td>1-1000</td>
+      <td>宽高比的值</td>
     </tr>
     <tr>
       <td>heightToWidthScale(自定义属性)</td>
       <td>无</td>
       <td>普通宽高比  根据指定高和指定比例计算设置宽度 width / height限制条件 必须先 配置 height的大小;</td>
-      <td>1-1000</td>
+      <td>宽高比的值</td>
     </tr>
     <tr>
       <td>resultString(自定义属性)</td>
       <td>无</td>
       <td>最终结果值, 调用完OSSImageMaker, 需要调用resultString, 取出已经修改过的图片URL</td>
-      <td>1-1000</td>
+      <td>返回一个e.g http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png?x-oss-process=image/resize,w_200,h_400,m_pad,limit_0</td>
     </tr>
   </tbody>
 </table>
