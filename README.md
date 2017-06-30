@@ -19,7 +19,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "OSSImageMaker"
 ```
-### OSS阿里云属性比对
+```
+## OSS阿里云属性比对
 <table>
   <thead>
     <tr>
@@ -31,14 +32,20 @@ pod "OSSImageMaker"
   </thead>
   <tbody>
     <tr>
-      <td><img src="https://raw.github.com/ibireme/YYText/master/Attributes/YYText Extended/YYTextAttachment.gif" width="200"></td>
-      <td>TextAttachment</td>
-      <td>YYTextAttachment</td>
+      <td>contentModel</td>
+      <td>m</td>
+      <td>指定缩略的模式：
+lfit：等比缩放，限制在设定在指定w与h的矩形内的最大图片。
+mfit：等比缩放，延伸出指定w与h的矩形框外的最小图片。
+fill：固定宽高，将延伸出指定w与h的矩形框外的最小图片进行居中裁剪。
+pad：固定宽高，缩略填充
+fixed：固定宽高，强制缩略</td>
+      <td></td>
     </tr>
     
   </tbody>
 </table>
-
+```
 
 ## Author
 
