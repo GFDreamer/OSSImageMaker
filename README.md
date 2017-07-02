@@ -95,8 +95,19 @@ pod "OSSImageMaker"
 ## Resize(图片缩放使用范例)
 - 一下示例使用的图片是张图片宽度 1125 高度 375 的 @3x 的png 图片放在 OSS上面
 - URL: http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png
- ![](Example/OSSImageMaker/截图/Resize/1.png=375x764)
- <td><img src="Example/OSSImageMaker/截图/Resize/1.png" width="200"></td>
+<tr>
+  <td><img src="Example/OSSImageMaker/截图/Resize/1.png" width="200"></td>
+  <td><img src="Example/OSSImageMaker/截图/Resize/2.png" width="200"></td>
+  <td><img src="Example/OSSImageMaker/截图/Resize/3.png" width="200"></td>
+</tr>
+<tr>
+  <td><img src="Example/OSSImageMaker/截图/Resize/4.png" width="200"></td>
+  <td><img src="Example/OSSImageMaker/截图/Resize/5.png" width="200"></td>
+  <td><img src="Example/OSSImageMaker/截图/Resize/6.png" width="200"></td>
+</tr>
+
+
+
 
 ## Author
 
