@@ -29,7 +29,6 @@
     //因为OSSImageMaker 内置转换了 2x 和3x 所以图片的质量转换后 2x 高度200px 2x 高度 300px
     NSString *str = @"http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png";
     NSString *oss_url = str.maker.resize.width(@100).resultString;
-   
     [self pushWithUrl:oss_url];
     
     
@@ -60,7 +59,6 @@
 - (IBAction)button4:(id)sender {
     //将图缩略成宽度为100，高度为100，短边优先 contentModel 为mfit
     // frame 宽高 100 则 2x和3x 分别为 200 和 300px
-    
     NSString *str = @"http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png";
     NSString *oss_url = str.maker.resize.width(@100).height(@100).contentModel(@(OSSImageResizeContentModelTypeMfit)).resultString;
     [self pushWithUrl:oss_url];
