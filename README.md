@@ -97,7 +97,7 @@ pod "OSSImageMaker"
 - URL: http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png
 
 ### 单边缩放
-![](Example/OSSImageMaker/截图/Resize/2.png=200x500)
+![](Example/OSSImageMaker/截图/Resize/1.png)
   ```objc
     //将图缩略成高度为100，宽度按比例处理。
     //因为OSSImageMaker 内置转换了 2x 和3x 所以图片的质量转换后 2x 高度200px 2x 高度 300px
@@ -106,7 +106,7 @@ pod "OSSImageMaker"
     
   ```
  ### 强制宽高缩略
-
+![](Example/OSSImageMaker/截图/Resize/2.png)
  ```objc
  //强制缩略宽高 contentModel 为 fiexd
     // frame 宽高 100 则 2x和3x 分别为 200 和 300px
@@ -114,7 +114,7 @@ pod "OSSImageMaker"
     NSString *oss_url = str.maker.resize.width(@100).height(@100)
  ```
  ### 等比缩放, 限定在矩形框内
- <img src="Example/OSSImageMaker/截图/Resize/3.png" width="200">
+![](Example/OSSImageMaker/截图/Resize/3.png)
  ```objc
  //将图缩略成宽度为100，高度为100，按长边优先 contentModel 为lift
     // frame 宽高 100 则 2x和3x 分别为 200 和 300px
@@ -122,7 +122,7 @@ pod "OSSImageMaker"
     NSString *oss_url = str.maker.resize.width(@100).height(@100).contentModel(@(OSSImageResizeContentModelTypeLfit)).resultString;
  ```
 ### 等比缩放, 限定在矩形框内 短边优先
-<img src="Example/OSSImageMaker/截图/Resize/4.png" width="200">
+![](Example/OSSImageMaker/截图/Resize/4.png)
 ```objc
 //将图缩略成宽度为100，高度为100，短边优先 contentModel 为mfit
     // frame 宽高 100 则 2x和3x 分别为 200 和 300px
@@ -130,7 +130,7 @@ pod "OSSImageMaker"
     NSString *oss_url = str.maker.resize.width(@100).height(@100).contentModel(@(OSSImageResizeContentModelTypeMfit)).resultString;
 ```
 ### 固定宽高，自动裁剪
-<img src="Example/OSSImageMaker/截图/Resize/5.png" width="200">
+![](Example/OSSImageMaker/截图/Resize/5.png)
 
 ```objc
 //将图缩略成宽度为100，高度为100，contentModel 为fill
@@ -139,7 +139,7 @@ pod "OSSImageMaker"
     NSString *oss_url = str.maker.resize.width(@100).height(@100).contentModel(@(OSSImageResizeContentModelTypeFill)).resultString;
 ```
 ### 缩略填充
-<img src="Example/OSSImageMaker/截图/Resize/6.png" width="200">
+![](Example/OSSImageMaker/截图/Resize/6.png)
 ```objc
 //将图按短边缩略到100x100, 然后按红色填充 contentModel pad 模式
     // frame 宽高 100 则 2x和3x 分别为 200 和 300px
@@ -147,7 +147,7 @@ pod "OSSImageMaker"
     NSString *oss_url = str.maker.resize.width(@100).height(@100).contentModel(@(OSSImageResizeContentModelTypePad)).color(@"ff0000").resultString;
 ```
 ### 按比例缩略
-<img src="Example/OSSImageMaker/截图/Resize/7.png" width="200">
+![](Example/OSSImageMaker/截图/Resize/7.png)
 ```objc
 NSString *str = @"http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png";
     NSString *oss_url = str.maker.resize.equalRatioScale(@10).resultString;
