@@ -97,12 +97,13 @@ pod "OSSImageMaker"
 - URL: http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png
 
 ### 单边缩放
-  <td><img src="Example/OSSImageMaker/截图/Resize/1.png" width="200"><td
-  ```ruby
-  //将图缩略成高度为100，宽度按比例处理。
+<img src="Example/OSSImageMaker/截图/Resize/1.png" width="200">
+  ```
+    //将图缩略成高度为100，宽度按比例处理。
     //因为OSSImageMaker 内置转换了 2x 和3x 所以图片的质量转换后 2x 高度200px 2x 高度 300px
     NSString *str = @"http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png";
     NSString *oss_url = str.maker.resize.width(@100).resultString;
+    
   ```
  ### 强制宽高缩略
  <td><img src="Example/OSSImageMaker/截图/Resize/2.png" width="200"><td
