@@ -20,7 +20,6 @@ it, simply add the following line to your Podfile:
 pod "OSSImageMaker"
 ```
 ## OSS阿里云属性比对
-================
 <table>
   <thead>
     <tr>
@@ -94,10 +93,9 @@ pod "OSSImageMaker"
 </table>
 
 ## Resize(图片缩放使用范例)
-============
 - 一下示例使用的图片是张图片宽度 1125 高度 375 的 @3x 的png 图片放在 OSS上面
 - URL: http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png
-- ![](Example/OSSImageMaker/截图/Resize/1.png=375x736
+- ﻿![](Example/OSSImageMaker/截图/Resize/1.png=375x736
 
 ## Author
 
