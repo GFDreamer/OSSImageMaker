@@ -96,9 +96,9 @@ pod "OSSImageMaker"
 - 一下示例使用的图片是张图片宽度 1125 高度 375 的 @3x 的png 图片放在 OSS上面
 - URL: http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png
 <tr>
-  <td><img src="Example/OSSImageMaker/截图/Resize/1.png" width="200"></td>
-  <td><img src="Example/OSSImageMaker/截图/Resize/2.png" width="200"></td>
-  <td><img src="Example/OSSImageMaker/截图/Resize/3.png" width="200"></td>
+  <th><td><img src="Example/OSSImageMaker/截图/Resize/1.png" width="200"></td></th>
+  <th><td><img src="Example/OSSImageMaker/截图/Resize/2.png" width="200"></td></th>
+  <th><td><img src="Example/OSSImageMaker/截图/Resize/3.png" width="200"></td></th>
 </tr>
 <tr>
   <td><img src="Example/OSSImageMaker/截图/Resize/4.png" width="200"></td>
