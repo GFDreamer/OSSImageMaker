@@ -97,7 +97,7 @@ pod "OSSImageMaker"
 - URL: http://jyjf-test.oss-cn-hangzhou.aliyuncs.com/cms/201706/1a63a8cf9a5043999b53df72fdafc124.png
 
 ### 单边缩放
-<img src="Example/OSSImageMaker/截图/Resize/1.png" width="200">
+![](Example/OSSImageMaker/截图/Resize/2.png=200*500)
   ```objc
     //将图缩略成高度为100，宽度按比例处理。
     //因为OSSImageMaker 内置转换了 2x 和3x 所以图片的质量转换后 2x 高度200px 2x 高度 300px
@@ -106,7 +106,7 @@ pod "OSSImageMaker"
     
   ```
  ### 强制宽高缩略
- <img src="Example/OSSImageMaker/截图/Resize/2.png" width="200">
+
  ```objc
  //强制缩略宽高 contentModel 为 fiexd
     // frame 宽高 100 则 2x和3x 分别为 200 和 300px
