@@ -16,10 +16,11 @@ static NSString *const oss_p = @"p_";
 static NSString *const oss_limit = @"limit_";
 static NSString *const oss_color = @"color_";
 static NSString *const oss_mfit = @"m_mfit";
-static NSString *const oss_lift = @"m_lift";
+static NSString *const oss_lift = @"m_lfit";
 static NSString *const oss_fill = @"m_fill";
 static NSString *const oss_pad = @"m_pad";
 static NSString *const oss_fixed = @"m_fixed";
+
 
 @interface OSSImageResizeAction ()
 @property(nonatomic, copy) NSString   *baseString;
@@ -28,6 +29,7 @@ static NSString *const oss_fixed = @"m_fixed";
 @property(nonatomic, copy) NSNumber   *oss_h;
 @property(nonatomic, copy) NSNumber   *oss_p;
 @property(nonatomic, copy) NSNumber   *oss_limit;
+@property(nonatomic, copy) NSString   *oss_color;
 
 @end
 
@@ -95,7 +97,7 @@ static NSString *const oss_fixed = @"m_fixed";
 {
     return ^(NSNumber *attribute) {
         NSAssert((attribute.floatValue >= 1.0 && attribute.floatValue <= 1000.0), @"倍数百分比。 小于100，即是缩小，大于100即是放大 不能超过范围");
-        [self addOSSImageAttributeValue:attribute.stringValue type:oss_limit];
+        [self addOSSImageAttributeValue:attribute.stringValue type:oss_p];
         return self;
     };
 }
@@ -142,6 +144,17 @@ static NSString *const oss_fixed = @"m_fixed";
     };
 }
 
+- (ActionColor)color
+{
+    
+    return ^(NSString *attribute) {
+        NSAssert(attribute, @"配置16进制色值");
+        [self addOSSImageAttributeValue:attribute type:oss_color];
+        self.oss_color = attribute;
+        return self;
+    };
+}
+
 - (NSString *)resultString
 {
     return self.baseString;
@@ -156,7 +169,7 @@ static NSString *const oss_fixed = @"m_fixed";
         case OSSImageResizeContentModelTypeMfit:
             result = oss_mfit;
             break;
-        case OSSImageResizeContentModelTypeLift:
+        case OSSImageResizeContentModelTypeLfit:
             result = oss_lift;
             break;
         case OSSImageResizeContentModelTypeFixed:

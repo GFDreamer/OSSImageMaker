@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2B96C81F08DC7900F517AF /* LGExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B96C21F08DC7900F517AF /* LGExampleTableViewController.m */; };
+		1C2B96C91F08DC7900F517AF /* LGResizeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B96C41F08DC7900F517AF /* LGResizeDetailViewController.m */; };
+		1C2B96CA1F08DC7900F517AF /* LGResizeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B96C61F08DC7900F517AF /* LGResizeExampleViewController.m */; };
+		1C2B96CB1F08DC7900F517AF /* LGResizeExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C2B96C71F08DC7900F517AF /* LGResizeExampleViewController.xib */; };
 		20CEDA023F5B6A6DD3331046 /* Pods_OSSImageMaker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF2B52C6B64E3A17318A98 /* Pods_OSSImageMaker_Tests.framework */; };
 		2EA03370504B4AE44F412C8A /* Pods_OSSImageMaker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD7FF9396A8DC193E1263C0 /* Pods_OSSImageMaker_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -37,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C2B96C11F08DC7900F517AF /* LGExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGExampleTableViewController.h; sourceTree = "<group>"; };
+		1C2B96C21F08DC7900F517AF /* LGExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGExampleTableViewController.m; sourceTree = "<group>"; };
+		1C2B96C31F08DC7900F517AF /* LGResizeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGResizeDetailViewController.h; sourceTree = "<group>"; };
+		1C2B96C41F08DC7900F517AF /* LGResizeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGResizeDetailViewController.m; sourceTree = "<group>"; };
+		1C2B96C51F08DC7900F517AF /* LGResizeExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGResizeExampleViewController.h; sourceTree = "<group>"; };
+		1C2B96C61F08DC7900F517AF /* LGResizeExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGResizeExampleViewController.m; sourceTree = "<group>"; };
+		1C2B96C71F08DC7900F517AF /* LGResizeExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGResizeExampleViewController.xib; sourceTree = "<group>"; };
 		1FD7FF9396A8DC193E1263C0 /* Pods_OSSImageMaker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSSImageMaker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EDFD06925EB3149BE765CC /* OSSImageMaker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OSSImageMaker.podspec; path = ../OSSImageMaker.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* OSSImageMaker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSSImageMaker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +106,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C2B96C01F08DC7900F517AF /* Resize(缩放) */ = {
+			isa = PBXGroup;
+			children = (
+				1C2B96C11F08DC7900F517AF /* LGExampleTableViewController.h */,
+				1C2B96C21F08DC7900F517AF /* LGExampleTableViewController.m */,
+				1C2B96C31F08DC7900F517AF /* LGResizeDetailViewController.h */,
+				1C2B96C41F08DC7900F517AF /* LGResizeDetailViewController.m */,
+				1C2B96C51F08DC7900F517AF /* LGResizeExampleViewController.h */,
+				1C2B96C61F08DC7900F517AF /* LGResizeExampleViewController.m */,
+				1C2B96C71F08DC7900F517AF /* LGResizeExampleViewController.xib */,
+			);
+			path = "Resize(缩放)";
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +157,7 @@
 		6003F593195388D20070C39A /* Example for OSSImageMaker */ = {
 			isa = PBXGroup;
 			children = (
+				1C2B96C01F08DC7900F517AF /* Resize(缩放) */,
 				6003F59C195388D20070C39A /* LGAppDelegate.h */,
 				6003F59D195388D20070C39A /* LGAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -282,6 +308,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				1C2B96CB1F08DC7900F517AF /* LGResizeExampleViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +423,10 @@
 			files = (
 				6003F59E195388D20070C39A /* LGAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LGViewController.m in Sources */,
+				1C2B96CA1F08DC7900F517AF /* LGResizeExampleViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				1C2B96C81F08DC7900F517AF /* LGExampleTableViewController.m in Sources */,
+				1C2B96C91F08DC7900F517AF /* LGResizeDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +557,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSSImageMaker/OSSImageMaker-Prefix.pch";
 				INFOPLIST_FILE = "OSSImageMaker/OSSImageMaker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -542,6 +573,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSSImageMaker/OSSImageMaker-Prefix.pch";
 				INFOPLIST_FILE = "OSSImageMaker/OSSImageMaker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

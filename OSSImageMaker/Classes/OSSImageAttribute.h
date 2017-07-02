@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, OSSImageResizeContentModelType) {
-    OSSImageResizeContentModelTypeLift,
+    OSSImageResizeContentModelTypeLfit,
     OSSImageResizeContentModelTypeMfit,
     OSSImageResizeContentModelTypePad,
     OSSImageResizeContentModelTypeFixed,
@@ -20,6 +20,10 @@ typedef NS_ENUM(NSInteger, OSSImageResizeContentModelType) {
 @interface OSSImageResizeAction : NSObject
 
 typedef OSSImageResizeAction *(^Action) (NSNumber *attribute);
+
+typedef OSSImageResizeAction *(^ActionColor) (NSString *attribute);
+
+
 
 - (instancetype)initWithString:(NSString *)string;
 
@@ -38,6 +42,9 @@ typedef OSSImageResizeAction *(^Action) (NSNumber *attribute);
 
 /** 等比缩放*/
 @property(nonatomic, strong) Action   equalRatioScale;
+
+/** 缩略填充*/
+@property(nonatomic, strong) ActionColor  color;
 
 
 

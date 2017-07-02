@@ -7,12 +7,15 @@
 //
 
 #import "LGAppDelegate.h"
-
+#import "LGExampleTableViewController.h"
 @implementation LGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[LGExampleTableViewController alloc] init ]];
+    
+    self.window.rootViewController = nav;
     return YES;
 }
 

@@ -1,6 +1,6 @@
 PODS:
   - Masonry (1.0.2)
-  - OSSImageMaker (0.1.0)
+  - OSSImageMaker (0.1.1)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  OSSImageMaker: f9e60cd872a228aafe84af053e22bc6b9152400e
+  OSSImageMaker: 6b9ffd494763281357b2e3e5e4c0b2f49844fff3
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
 PODFILE CHECKSUM: f94b5ba5755717f91cf4d274c87768fca7a79084

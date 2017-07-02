@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LGResizeExampleViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xfP-yT-FlR">
+                    <rect key="frame" x="20" y="100" width="335" height="296"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntm-UK-nxI">
+                            <rect key="frame" x="8" y="8" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="wHK-aT-Ygp"/>
+                            </constraints>
+                            <state key="normal" title="单边缩略"/>
+                            <connections>
+                                <action selector="button1:" destination="-1" eventType="touchUpInside" id="0sg-qv-hZK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-bg-Kmg">
+                            <rect key="frame" x="8" y="48" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="i56-Bs-SX7"/>
+                            </constraints>
+                            <state key="normal" title="强制宽高缩略"/>
+                            <connections>
+                                <action selector="button2:" destination="-1" eventType="touchUpInside" id="kAd-ln-taz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-P3-Nl7">
+                            <rect key="frame" x="8" y="88" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="XPL-sO-30c"/>
+                            </constraints>
+                            <state key="normal" title="等比缩放，限定在矩形框内长边优先"/>
+                            <connections>
+                                <action selector="button3:" destination="-1" eventType="touchUpInside" id="bY9-uM-bq4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcv-Uy-nIg">
+                            <rect key="frame" x="8" y="128" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dhc-6s-5QA"/>
+                            </constraints>
+                            <state key="normal" title="等比缩放，限定在矩形框内短边优先"/>
+                            <connections>
+                                <action selector="button4:" destination="-1" eventType="touchUpInside" id="6me-pl-ibd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uld-Qf-0AX">
+                            <rect key="frame" x="8" y="168" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="i0d-Fm-lDz"/>
+                            </constraints>
+                            <state key="normal" title="固定宽高，自动裁剪"/>
+                            <connections>
+                                <action selector="button5:" destination="-1" eventType="touchUpInside" id="5SV-Ww-r38"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRw-UC-IKc">
+                            <rect key="frame" x="8" y="208" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="KSZ-Fa-1YZ"/>
+                            </constraints>
+                            <state key="normal" title="缩略填充"/>
+                            <connections>
+                                <action selector="button6:" destination="-1" eventType="touchUpInside" id="Nil-K0-SPw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHU-kq-MBg">
+                            <rect key="frame" x="8" y="248" width="319" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="00m-8T-ZpX"/>
+                            </constraints>
+                            <state key="normal" title="按比例缩略"/>
+                            <connections>
+                                <action selector="button7:" destination="-1" eventType="touchUpInside" id="enz-sC-eRr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xfP-yT-FlR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Mvb-mT-GFA"/>
+                <constraint firstItem="xfP-yT-FlR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="hPb-oX-tnl"/>
+                <constraint firstAttribute="trailing" secondItem="xfP-yT-FlR" secondAttribute="trailing" constant="20" id="ixT-A0-9AA"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xfP-yT-FlR" secondAttribute="bottom" constant="20" id="uIx-R8-Tus"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
